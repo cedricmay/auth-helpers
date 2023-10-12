@@ -434,8 +434,8 @@ importers:
   packages/sveltekit:
     dependencies:
       '@supabase/auth-helpers-shared':
-        specifier: workspace:*
-        version: link:../shared
+        specifier: https://github.com/cedricmay/auth-helpers/raw/main/packages/shared/supabase-auth-helpers-shared-0.5.1.tgz
+        version: '@github.com/cedricmay/auth-helpers/raw/main/packages/shared/supabase-auth-helpers-shared-0.5.1.tgz(@supabase/supabase-js@2.19.0)'
     devDependencies:
       '@supabase/supabase-js':
         specifier: 2.19.0
@@ -3303,7 +3303,6 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
-    dev: true
 
   /@supabase/supabase-js@2.33.1:
     resolution: {integrity: sha512-jA00rquPTppPOHpBB6KABW98lfg0gYXcuGqP3TB1iiduznRVsi3GGk2qBKXPDLMYSe0kRlQp5xCwWWthaJr8eA==}
@@ -10885,3 +10884,15 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
+
+  '@github.com/cedricmay/auth-helpers/raw/main/packages/shared/supabase-auth-helpers-shared-0.5.1.tgz(@supabase/supabase-js@2.19.0)':
+    resolution: {tarball: https://github.com/cedricmay/auth-helpers/raw/main/packages/shared/supabase-auth-helpers-shared-0.5.1.tgz}
+    id: '@github.com/cedricmay/auth-helpers/raw/main/packages/shared/supabase-auth-helpers-shared-0.5.1.tgz'
+    name: '@supabase/auth-helpers-shared'
+    version: 0.5.1
+    peerDependencies:
+      '@supabase/supabase-js': ^2.19.0
+    dependencies:
+      '@supabase/supabase-js': 2.19.0
+      jose: 4.14.4
+    dev: false

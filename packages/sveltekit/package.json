@@ -51,7 +51,7 @@
 		"vite": "^4.4.9"
 	},
 	"dependencies": {
-		"@supabase/auth-helpers-shared": "workspace:*"
+		"@supabase/auth-helpers-shared": "https://github.com/cedricmay/auth-helpers/raw/main/packages/shared/supabase-auth-helpers-shared-0.5.1.tgz"
 	},
 	"peerDependencies": {
 		"@supabase/supabase-js": "^2.19.0",
